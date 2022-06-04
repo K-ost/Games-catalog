@@ -1,0 +1,15 @@
+.btn-theme {
+  border: 1px solid #ced4da;
+  box-shadow: none !important;
+  min-width: 38px;
+  height: 38px;
+}
+.btn-moon {
+  background: #fff url(./../../assets/svg/moon.svg) center center no-repeat;
+  background-size: 20px;
+}
+.btn-sun {
+  background: #353535 url(./../../assets/svg/sun.svg) center center no-repeat;
+  background-size: 26px;
+  border-color: #545454;
+}

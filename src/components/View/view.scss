@@ -1,0 +1,28 @@
+.viewbox {
+  display: flex;
+  .btn {
+    background-color: #fff;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid #c1c1c1;
+    margin-right: 5px;
+    width: 35px;
+    height: 35px;
+    &:last-child {margin-right: 0;}
+    &-grid {
+      background-image: url(./../../assets/svg/grid.svg);
+      background-size: 24px;
+    }
+    &-list {
+      background-image: url(./../../assets/svg/list.svg);
+      background-size: 18px;
+    }
+    &-view.active {background-color: #545454; border-color: #545454;}
+    &-grid.active {background-image: url(./../../assets/svg/grid-white.svg);}
+    &-list.active {background-image: url(./../../assets/svg/list-white.svg);}
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .viewbox {display: none;}
+}

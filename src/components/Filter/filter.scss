@@ -1,0 +1,74 @@
+.filter {
+  padding-right: 15px;
+  .dropdown {
+    display: block;
+    margin: 0 0 20px;
+    .btn {width: 100%;}
+  }
+  .btn-outline-secondary {margin-top: 10px;}
+
+  &-box {
+    background: #fff;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+    margin: 0 0 14px;
+    &__title {
+      background: #dadada;
+      border-radius: 3px 3px 0 0;
+      color: #2a2a2a;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 18px;
+      padding: 10px 16px;
+    }
+    &__hidden {
+      overflow: hidden;
+      position: relative;
+      transition: height 200ms linear;
+      &::after {
+        background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,1));
+        content: '';
+        display: block;
+        position: absolute;
+        height: 40px;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        z-index: 100;
+      }
+      &.opened::after {content: none; display: none;}
+    }
+  }
+  &-more {
+    padding: 2px 16px 10px;
+    a {
+      border-bottom: 1px dashed var(--color-purple-hover);
+      color: var(--color-purple-hover);
+      font-weight: 500;
+      text-decoration: none;
+    }
+  }
+  &-item {
+    font-size: 14px;
+    line-height: 16px;
+    padding: 8px 16px;
+    &:last-child {border-radius: 0 0 4px 4px;}
+    &.checked {background: #e3e3e3;}
+    label {
+      position: relative; padding-left: 24px; cursor: pointer; display: block;
+      .form-check-input {position: absolute; left: 0; top: 1px; margin: 0;}
+    }
+  }
+}
+
+body.dark-theme .filter {
+  &-box {
+    background: #353535;
+    border: 1px solid #535353;
+    &__title {background: #545454; color: #fff;}
+    &__hidden::after {
+      background: linear-gradient(rgba(53,53,53,0), #353535);
+    }
+  }
+  &-more a {border-bottom-color: #9ec5fe;}
+}

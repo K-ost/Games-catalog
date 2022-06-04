@@ -1,0 +1,14 @@
+/* sort */
+.sorting {
+  margin: 0 16px 0 0;
+}
+
+@media screen and (max-width: 720px) {
+  .sorting {
+    .dropdown {
+      margin: 0 0 10px;
+      .btn {width: 100%; text-align: left;}
+      &-menu {width: 100%;}
+    }
+  }
+}

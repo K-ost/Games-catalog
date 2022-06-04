@@ -1,0 +1,22 @@
+.gallery {
+  margin: 0 0 30px;
+  .swiper-button-prev, .swiper-button-next {
+    background: rgba(255,255,255,0.25) url(./../../assets/svg/next.svg) center center no-repeat;
+    width: 40px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    margin: 0;
+    &::after {
+      content: none;
+      display: none;
+    }
+  }
+  .swiper-button-prev {left: 0; transform: matrix(-1,0,0,1,0,0);}
+  .swiper-button-next {right: 0;}
+  .swiper-pagination {
+    &-bullet {background: #fff; opacity: 0.5; margin: 0 2px !important;}
+    &-bullet-active {opacity: 1;}
+  }
+  img {display: block; border-radius: 4px;}
+}

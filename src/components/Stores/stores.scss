@@ -1,0 +1,59 @@
+/* Stores */
+.storeItem {
+  background: #e3e3e3;
+  border-radius: 5px;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  //justify-content: center;
+  margin: 0 0 5px;
+  height: 40px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 4px 12px;
+  transition: all 200ms ease-in-out;
+  text-decoration: none;
+  &::before {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 24px;
+    content: '';
+    opacity: 0.5;
+    display: block;
+    margin: 0 6px 0 0;
+    width: 30px;
+    height: 30px;
+  }
+  &-playstation-store::before {background-image: url(./../../assets/svg/ps-black.svg);}
+  &-epic-games::before {background-image: url(./../../assets/svg/epic-games.svg);}
+  &-steam::before {background-image: url(./../../assets/svg/steam.svg);}
+  &-xbox360::before,
+  &-xbox-store::before {background-image: url(./../../assets/svg/xbox-black.svg);}
+  &-google-play::before {background-image: url(./../../assets/svg/google-play.svg);}
+  &-nintendo::before {background-image: url(./../../assets/svg/nintendo-store.svg); background-size: 20px;}
+  &-apple-appstore::before {background-image: url(./../../assets/svg/apple-store.svg);}
+  &-itch::before {background-image: url(./../../assets/svg/itch-io.svg); background-size: 28px;}
+  &-gog::before {background-image: url(./../../assets/svg/gog.svg); background-size: 60px;}
+
+  &:hover {
+    background: #d1d1d1; color: #000;
+    &::before {opacity: 1;}
+  }
+}
+
+body.dark-theme .storeItem {
+  background: #353535;
+  &::before {
+    filter: invert(100%);
+    opacity: 0.7;
+  }
+  &:hover {
+    background: #545454;
+    color: #fff;
+    &::before {
+      opacity: 1;
+    }
+  }
+}
+

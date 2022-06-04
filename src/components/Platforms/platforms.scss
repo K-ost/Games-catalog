@@ -1,0 +1,31 @@
+/* platforms */
+.platforms {
+  margin: 0 0 12px; padding: 0;
+  li {
+    background-color: #545454;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 14px;
+    border-radius: 3px;
+    list-style: none;
+    display: inline-block;
+    vertical-align: top;
+    width: 24px;
+    height: 24px;
+    margin: 0 2px 2px 0;
+    &:last-child {margin: 0;}
+  }
+  &-playstation {background-image: url(./../../assets/svg/ps.svg); background-size: 20px !important;}
+  &-xbox {background-image: url(./../../assets/svg/xbox.svg);}
+  &-steam {background-image: url(./../../assets/svg/steam.svg);}
+  &-pc {background-image: url(./../../assets/svg/windows.svg);}
+  &-mac {background-image: url(./../../assets/svg/apple.svg);}
+  &-ios {background-image: url(./../../assets/svg/ios.svg);}
+  &-linux {background-image: url(./../../assets/svg/linux.svg);}
+  &-android {background-image: url(./../../assets/svg/android.svg);}
+  &-nintendo {background-image: url(./../../assets/svg/nintendo.svg);}
+  &-web {background-image: url(./../../assets/svg/web.svg); background-size: 18px !important;}
+  &-atari {background-image: url(./../../assets/svg/atari.svg); background-size: 18px !important;}
+  &-sega {background-image: url(./../../assets/svg/sega.svg);}
+  &-neo-geo {background-image: url(./../../assets/svg/neogeo.svg); background-size: 22px !important;}
+}

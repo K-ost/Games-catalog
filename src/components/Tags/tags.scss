@@ -1,0 +1,27 @@
+/* tagslist */
+.tagslist {
+  &-pills {
+    margin: 0 0 20px;
+    a, span {
+      background: #9a9a9a;
+      border-radius: 4px;
+      color: #fff;
+      font-size: 14px;
+      line-height: 16px;
+      display: inline-block;
+      text-decoration: none;
+      margin: 0 4px 4px 0;
+      padding: 3px 6px;
+    }
+    a {
+      background: var(--color-purple-hover);
+      transition: all 200ms ease-in;
+      &:hover {background: var(--color-purple);}
+    }
+  }
+}
+
+body.dark-theme .tagslist-pills a:not(:hover) {
+  background: #545454;
+  color: inherit;
+}

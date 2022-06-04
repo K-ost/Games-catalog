@@ -1,0 +1,47 @@
+
+/* dropdown */
+.dropdown-btn, .dropdown-btn:active, .dropdown-btn:focus {
+  background: #fff;
+  border: 1px solid #a1a1a1;
+  color: #2a2a2a;
+  font-size: 14px;
+  position: relative;
+  box-shadow: none !important;
+  padding-right: 34px;
+  text-align: left;
+  &::after {
+    background: url(../../assets/svg/chevron.svg) 0 0 no-repeat;
+    background-size: cover;
+    border: 0;
+    width: 12px;
+    height: 9px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+  &-item {font-size: 13px;}
+}
+.dropdown-btn:hover, .dropdown.show .dropdown-btn {
+  background-color: #545454;
+  border-color: #545454;
+  color: #fff;
+  &::after {
+    background-image: url(../../assets/svg/chevron-white.svg);
+  }
+}
+.dropdown-item {
+  font-size: 14px;
+  line-height: 18px;
+}
+.dropdown.show .dropdown-btn::after {
+  transform: matrix(1,0,0,-1,0,0);
+  top: 13px;
+}
+
+body.dark-theme .dropdown {
+  .btn {
+    background: 0; border-color: #454545; color: #fff;
+    &::after {background-image: url(./../../assets/svg/chevron-white.svg);}
+  }
+  &-menu {background: #454545;}
+}

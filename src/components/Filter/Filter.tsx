@@ -27,7 +27,7 @@ const Sidebar: React.FC = () => {
   }
 
   return (
-    <div className="col-12 col-md-3 filter">
+    <div className="col-12 col-lg-3 filter">
       <h3>Filter</h3>
       <FilterBox title="Platforms" list={platforms?.results} slug="platforms" />
       <FilterBox title="Developers" list={developers?.results} slug="developers" />

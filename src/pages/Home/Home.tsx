@@ -19,7 +19,7 @@ const Home: React.FC = () => {
   return (
     <div className="row">
       <Filter />
-      <div className="col-12 col-md-9">
+      <div className="col-12 col-lg-9">
         <div className="article">
           <h1>New and trending</h1>
           <p>Based on player counts and release date</p>
